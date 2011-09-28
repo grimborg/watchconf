@@ -1,9 +1,9 @@
-Watchconf is a simple tool to  quickly audit the configurations of a collection of servers, namely:
+Watchconf is a simple tool to quickly audit the configurations of a collection of servers, namely:
 
 * Have a list of all config files that must be present in the servers.
 * Check these in all servers, and make sure that they are all equal, and if they are different, see why they are different and whether that's what we want.
 
-This tool displays, for each configuration file:
+This tool retrieves the files contents via ssh and displays, for each configuration file:
 
 * Which servers have it and which don't (servers that don't have the file will appear in italics.)
 * The servers that do have the file, will be grouped so that servers with identical file contents are together.
